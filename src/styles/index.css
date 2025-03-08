@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /** Light Mode */
+
+    &,
+    &.light {
+        /* --background-secondary: #e5f5e0;
+        --background-tertiary: #cfe3be;
+        --text-placeholder: #cfe3be; */
+        --background-primary: rgb(255, 255, 255);
+        --background-secondary: rgb(240, 240, 240);
+        --background-tertiary: rgb(224, 224, 224);
+        --background-disabled: rgb(245, 245, 245);
+        --text-primary: rgb(0, 0, 0);
+        --text-secondary: rgb(51, 51, 51);
+        --text-tertiary: rgb(102, 102, 102);
+        --text-disabled: rgb(187, 187, 187);
+        --text-placeholder: rgb(225, 225, 224);
+        --border: rgba(0, 0, 0, 0.1);
+
+        color-scheme: light;
+    }
+
+    /** Dark Mode */
+
+    &.dark {
+        --background-primary: rgb(13, 13, 13);
+        --background-secondary: rgb(25, 25, 25);
+        --background-tertiary: rgb(33, 33, 33);
+        --background-disabled: rgb(20, 17, 17);
+        --text-primary: rgb(255, 255, 255);
+        --text-secondary: rgb(202, 202, 202);
+        --text-tertiary: rgb(179, 179, 179);
+        --text-disabled: rgb(68, 68, 68);
+        --text-placeholder: rgb(55, 55, 55);
+        --border: rgba(255, 255, 255, 0.1);
+
+        color-scheme: dark;
+
+    }
+
+    /** Secondary color */
+    --primary: rgb(24, 124, 25);
+    --primary-hover: rgb(13, 91, 17);
+
+    --secondary: rgb(105, 180, 30);
+    --secondary-hover: rgb(85, 150, 25);
+}
+
+* {
+    @apply box-border scroll-smooth;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    @apply h-[100dvh] bg-background-primary !important;
+}
+
+#root {
+    @apply flex h-full bg-background-primary;
+}
+
+html:not([data-animations='false']).theme-transition {
+    * {
+        @apply transition-colors duration-200 !important;
+    }
+}
+
+html[data-animations='false'] {
+
+    *,
+    *::before,
+    *::after {
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    @apply h-1.5 w-0.5;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply rounded-md bg-text-tertiary;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
+
+::-webkit-scrollbar-corner {
+    @apply bg-transparent;
+}
+
+.no_scrollbar::-webkit-scrollbar {
+    display: none;
+}

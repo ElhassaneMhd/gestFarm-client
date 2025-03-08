@@ -1,0 +1,114 @@
+{
+  "header": {
+    "navbar": {
+      "home": "Home",
+      "offers": "Offers",
+      "contact": "Contact",
+      "about": "About Us",
+      "dashboard": "Dashboard"
+    },
+    "auth": {
+      "login": "Log In",
+      "register": "Sign Up",
+      "logout": "Logout",
+      "dashboard": "Dashboard"
+    },
+    "theme": {
+      "dark": "Dark",
+      "light": "Light",
+      "system": "System"
+    },
+    "languages": {
+      "en": "English",
+      "fr": "French",
+      "ar": "Arabic"
+    }
+  },
+  "form": {
+    "acceptTerms": "Accept the terms of information access law",
+    "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
+    "register": "Register",
+    "submit": "Submit",
+    "login": "Login",
+    "welcome": "Welcome To ",
+    "email": {
+      "label": "Email Address",
+      "placeholder": "Email Address"
+    },
+    "username": {
+      "label": "Username",
+      "placeholder": "Username"
+    },
+    "fullName": {
+      "label": "Full Name",
+      "placeholder": "Full Name"
+    },
+    "firstName": {
+      "label": "First Name",
+      "placeholder": "First Name"
+    },
+    "lastName": {
+      "label": "Last Name",
+      "placeholder": "First Name"
+    },
+    "phone": {
+      "label": "Phone Number",
+      "placeholder": "Phone Number"
+    },
+
+    "city": {
+      "label": "City",
+      "placeholder": ""
+    },
+    "password": {
+      "label": "Password ",
+      "placeholder": "Password"
+    },
+    "confirmPassword": {
+      "label": "Confirm Password",
+      "placeholder": "Confirm Password"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
+    "description": "Description"
+  },
+  "overview": {  },
+  "actions": {
+    "search": "Search",
+    "close": "Close",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "add": "Add",
+    "showAll": "Show All",
+    "update": "Update",
+    "download": "Download",
+    "cancel": "Cancel",
+    "filter": "Filter",
+    "reset": "Reset",
+    "sortBby": "Sort By",
+    "orderBy": "Order By",
+    "asc": "Ascending",
+    "desc": "Descending"
+  },
+  "app": {
+    "sidebar": {
+      "overview": "Overview",
+      "sheep": "Sheep",
+      "users": "Users",
+      "shipments": "Shipments",
+      "categories": "Categories",
+      "sales": "Sales",
+      "sessions": "Sessions",
+      "emails": "Emails",
+      "settings": "Settings",
+      "roles":"Roles",
+      "logout": "Logout"
+    }
+  }
+}
