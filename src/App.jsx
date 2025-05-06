@@ -83,7 +83,7 @@ function App() {
           }}
           position={"bottom-right"}
           theme={theme}
-          toastOptions={{ className: "sonner-toast", duration: 2000 }}
+          toastOptions={{ className: "sonner-toast", duration: 6000 }}
         />
       </div>
     </>
