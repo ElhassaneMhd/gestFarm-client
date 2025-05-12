@@ -21,7 +21,7 @@ export function NewRecord({ onAdd, component }) {
   return (
     <Button
       display="with-icon"
-      className="text-nowrap"
+      className="text-nowrap new-record-button"
       onClick={() => {
         showForm({
           isOpen: true,
