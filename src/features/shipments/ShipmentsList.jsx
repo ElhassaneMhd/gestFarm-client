@@ -199,7 +199,7 @@ export const ShippersDropDown = ({ setValue, getValue }) => {
       <DropDown
         options={{
           className: "w-48 ",
-          shouldCloseOnClick: false,
+          shouldCloseOnClick: true,
           disabled: true,
         }}
         toggler={
