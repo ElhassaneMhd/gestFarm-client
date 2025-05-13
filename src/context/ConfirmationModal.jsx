@@ -68,7 +68,7 @@ export function ConfirmationModalProvider({ children }) {
             Cancel
           </Button>
           <Button
-            className={options.buttonClassName}
+            className={'confirmation-button'+ options.buttonClassName}
             onClick={onConfirm}
             color={options.color || "red"}
           >
