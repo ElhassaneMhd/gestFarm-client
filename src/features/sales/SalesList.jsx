@@ -150,7 +150,7 @@ export const SheepDropDown = ({ setValue, getValue }) => {
             <ChevronDown className="text-text-tertiary" />
           </Button>
         }
-        togglerClassName="text-text-tertiary bg-background-secondary"
+        togglerClassName="sheep-toggler text-text-tertiary bg-background-secondary"
       >
         {availableSheep?.length == 0 && (
           <DropDown.Option onClick={() => navigate("/app/sheep")}>

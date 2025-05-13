@@ -93,9 +93,6 @@ export function CategoriesList() {
 
           {
             name: "image",
-            label: "Image",
-            type: "image",
-            required: true,
             customComponent: <FileUploader resource={"Category image"} />,
           },
         ]}
