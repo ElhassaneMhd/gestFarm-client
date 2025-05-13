@@ -6,7 +6,7 @@ import {
   usePaginateCategories,
 } from "./useCategory";
 import { TableLayout } from "@/layouts/TableLayout";
-import { FileUploader } from "@/components/ui/File";
+// import { FileUploader } from "@/components/ui/File";
 import { usePaginate } from "../../hooks/usePaginate";
 
 export function CategoriesList() {
@@ -51,16 +51,16 @@ export function CategoriesList() {
             visible: true,
             format: (sheep) => sheep.length,
           },
-          {
-            key: "image",
-            displayLabel: "Image",
-            visible: true,
-            format: (image) => (
-              <div className=" w-10">
-                <img src={image} alt={"category image"} />
-              </div>
-            ),
-          },
+          // {
+          //   key: "image",
+          //   displayLabel: "Image",
+          //   visible: true,
+          //   format: (image) => (
+          //     <div className=" w-10">
+          //       <img src={image} alt={"category image"} />
+          //     </div>
+          //   ),
+          // },
           {
             key: "sheep",
             displayLabel: "Sheep",
@@ -91,10 +91,10 @@ export function CategoriesList() {
             rows: "5",
           },
 
-          {
-            name: "image",
-            customComponent: <FileUploader resource={"Category image"} />,
-          },
+          // {
+          //   name: "image",
+          //   customComponent: <FileUploader resource={"Category image"} />,
+          // },
         ]}
         fieldsToSearch={["name"]}
         downloadOptions={{

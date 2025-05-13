@@ -32,7 +32,7 @@ export const SheepCard = ({ sheep }) => {
           </div>
           <div className="mt-6">
             <span className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-semibold bg-white/10 text-white border border-white/20 backdrop-blur-sm">
-              {categoryName.toUpperCase()}
+              {categoryName?.toUpperCase()}
             </span>
           </div>
         </div>
@@ -44,7 +44,7 @@ export const SheepCard = ({ sheep }) => {
         <InfoItem
           icon={DollarSign}
           label="Price"
-          value={`${price.toLocaleString()} Dh`}
+          value={`${price?.toLocaleString()} Dh`}
         />
         <InfoItem icon={Clock} label="Age" value={SHEEP_AGES[age]} />
         <InfoItem icon={Tag} label="Category" value={categoryName} />
